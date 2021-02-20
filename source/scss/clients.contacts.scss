@@ -1,0 +1,40 @@
+.clients__contacts{
+    display: flex;
+    padding: 5rem 0 0 0;
+}
+.contacts__element{
+    flex: 0 1 25%;
+    display: flex;
+    align-items: center;
+}
+.contacts__element a, .contacts__element p{
+    font-size: 1rem;
+    line-height: 1.43rem;
+}
+.contacts__element-link{
+    position: relative;
+}
+.contacts__element-info a{
+    display: block;
+}
+.contacts__element-info{
+    overflow: hidden;
+}
+.span-disable{
+    display: none;
+}
+.element-info-wrap{
+    transition: transform .3s cubic-bezier(.075,.82,.165,1);
+    transform: translateY(66.666%);
+}
+.element-info-wrap span{
+    transition: opacity .6s cubic-bezier(.075,.82,.165,1);
+}
+.contacts__element-link:hover .element-info-wrap span{
+    opacity: 1;
+    visibility: visible;
+}
+.contacts__element-link:hover .element-info-wrap{
+    transition: transform .6s cubic-bezier(.075,.82,.165,1);
+    transform: translateY(0);
+}

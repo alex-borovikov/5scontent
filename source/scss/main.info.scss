@@ -1,0 +1,90 @@
+.information{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 150px;
+    position: relative;
+}
+.information:after{
+    content: '';
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+.learn-more{
+    position: relative;
+    z-index: 5;
+    width: 75%;
+}
+.learn-more:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.lm-video video{
+    max-width: 100%;
+}
+.lm-info{
+    margin-left: 5rem;
+    padding: 2.5rem 5rem 2.5rem 0;
+    align-self: center;
+}
+.lm-info-text{
+    margin-bottom: 3.125rem;
+}
+.lm-btn{
+    transform: translateX(-2.12rem);
+}
+.lm-info p{
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 2.55rem;
+}
+.lm-btn-svg{
+    width: 4.25rem;
+    height: 4.25rem;
+}
+.lm-btn-svg svg{
+    stroke: #fff;
+}
+.lm-btn-text{
+    margin-top: 10px;
+    transform: translateX(-25px);
+    position: relative;
+}
+.lm-btn-text:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: .3s;
+}
+.lm-btn-svg svg path{
+    transition: stroke-dashoffset 1.2s cubic-bezier(.075,.82,.165,1);
+}
+.lm-h3{
+    font-size: 1.625rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.lm-btn-link{
+    display: inline-block;
+}
+.lm-btn-link:hover .lm-btn-text:before{
+    width: 100%;
+}
+.lm-btn-link:hover .lm-btn-svg svg path{
+    stroke-dashoffset: 798px;
+}

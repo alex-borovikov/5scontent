@@ -1,0 +1,160 @@
+.header{
+    position: fixed;
+    z-index: 40;
+    top: -500px;
+    width: 95%;
+    max-width: 95%;
+    transition: top .5s;
+}
+.h-def{
+    top: 0;
+}
+.header-container{
+    padding: 2.5rem 0px 2.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.header-stroke{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    transform: translate(0);
+    transition: transform .5s, bottom 1s cubic-bezier(.075,.82,.165,1);
+    bottom: 100%;
+    left: 0;
+}
+.bounce-move{
+    display: flex;
+}
+.div-bounce-item{
+    transition: transform .2s;
+}
+.header-left {
+    display: flex;
+}
+.header-lang {
+    display: flex;
+    margin-right: 180px;
+}
+.menu-item .font-white,
+.font-white div{
+    color: #ebeded;
+}
+.lang-item:nth-child(2){
+    margin-left: 20px;
+}
+.lang-circle {
+    text-align: center;
+}
+
+ul.menu-list {
+    display: flex;
+
+}
+li.menu-column {
+    position: relative;
+    margin-right: 20px;
+}
+li.menu-column:last-child{
+    margin: 0px 0px 0px 0px;
+}
+.svg-circle-header{
+    width: 8px;
+    height: 8px;
+}
+.svg-circle-header > path{
+    fill: none;
+    stroke-width:76;
+    stroke: #fff;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-dasharray: 3572px;
+    stroke-dashoffset: 3572px;
+    transition: stroke-dashoffset .5s;
+}
+.lang-item{
+    position: relative;
+}
+.lang-text-bg,
+.lang-text-abbr{
+    position: relative;
+    z-index: 2;
+    background-color: #00a19a;
+}
+.lang-text-full-fr{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform .5s;
+}
+.lang-value-items:hover .lang-text-full-fr{
+    transform: translate(0);
+    opacity: 1;
+}
+.lang-item-fr{
+    transform: translateX(-80%);
+    z-index: 2;
+    transition: transform .4s;
+    background-color: #00a19a;
+}
+.lang-item-fr-null{
+    transform: translateX(0%);
+}
+.lang-text-full-eng{
+    transform: translateX(-100%);
+    transition: transform .4s;
+}
+.eng-visible{
+    transform: translateX(0%);
+}
+.lang-value-items:hover ~ .lang-item-fr{
+    transform: translateX(0%);
+}
+.menu-column:first-child:after,
+.menu-column:nth-child(2):after,
+.lang-item-fr:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10px;
+    height: 1.25rem;
+    width: 1px;
+    background-color: #fff;
+}
+.lang-item-fr:before{
+    left: -10px;
+}
+
+.lang-value,
+.menu-item{
+    margin-bottom: 5px;
+}
+.lang-value:hover ~ .circle-hover svg path,
+.menu-item:hover ~ .circle-hover svg path {
+    stroke-dashoffset: 0px;
+}
+.header-logo-svg {
+    fill: #ebeded;
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    left: 30px;
+    //bottom: 15px;
+    bottom: -100%;
+    transition: bottom .3s;
+}
+.lang-translate-active{
+    bottom: 100px !important; // Выбранный язык france
+}
+.lang-active{
+    transform: translateX(0%);// Выбранный язык, если у фран содержится этот клас то делаеться мардж боттом
+}
+.lang-active-icon svg path{ // Выбранный язык
+    stroke-dashoffset: 0px;
+}
+
+
+
+

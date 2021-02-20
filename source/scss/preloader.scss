@@ -1,0 +1,71 @@
+.preloader{
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.preloader__load{
+    width: 100px;
+    height: 2px;
+    position: relative;
+    overflow: hidden;
+}
+.load__line{
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    height: 1px;
+    animation-name: preloader;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+}
+
+@keyframes preloader {
+    0%{
+        left: -100%;
+        opacity: 1;
+    }
+    20%{
+        left: 100%;
+        opacity: 0;
+    }
+    21%{
+        left: -100%;
+        opacity: 1;
+    }
+    40%{
+        left: 100%;
+        opacity: 0;
+    }
+    41%{
+        left: -100%;
+        opacity: 1;
+    }
+    60%{
+        left: 100%;
+        opacity: 0;
+    }
+    61%{
+        left: -100%;
+        opacity: 1;
+    }
+    80%{
+        left: 100%;
+        opacity: 0;
+    }
+    81%{
+        left: -100%;
+        opacity: 1;
+    }
+    100%{
+        left: 100%;
+        opacity: 0;
+    }
+
+
+}

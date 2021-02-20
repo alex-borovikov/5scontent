@@ -1,0 +1,63 @@
+.footer{
+    position: relative;
+    top: -148px;
+    z-index: 6;
+}
+.footer__clients{
+}
+.clients__wrapper{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.clients__table{
+    width: 75%;
+}
+.clients__header,
+.clients__slogan{
+    padding: 1.625rem 0;
+}
+.clients__slogan{
+
+}
+.clients__slogan h2{
+    font-size: 1rem;
+}
+.clients__header h2{
+    font-size: 1.5rem;
+    @include carla;
+}
+.clients__table_column{
+    display: flex;
+}
+.clients__table-item:nth-child(3) svg{
+    max-height: 4vw;
+}
+.clients__table-item{
+    border: 1px solid black;
+    flex: 0 1 25%;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients__table-item svg path,
+.clients__table-item svg polygon,
+.clients__table-item svg rect
+{
+    stroke: #fff;
+    fill: #fff;
+}
+.mod_border .clients__table-item{
+    border-bottom: none;
+}
+.gl-no-right-border{
+    border-right: none;
+}
+.gl-no-left-border{
+    border-left: none;
+}
+.clients__table_column:nth-child(2) .clients__table-item:nth-child(2) svg,
+.clients__table_column:nth-child(2) .clients__table-item:nth-child(4) svg{
+    transform: scale(1.5);
+}

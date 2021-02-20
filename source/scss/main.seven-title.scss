@@ -1,0 +1,51 @@
+.seven-sec {
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+.seven-double{
+    z-index: 1;
+}
+.seven-wrap{
+    transform: translateY(120px);
+    transition: transform .3s;
+}
+.seven-item{
+    transition: transform .9s cubic-bezier(.075,.82,.165,1);
+}
+.seven-pgh{
+    text-transform: uppercase;
+    font-size: 6.25rem;
+    white-space: nowrap;
+    color: #fff;
+    @include perp;
+    line-height: 1.1;
+    position: relative;
+}
+.seven-item-f,
+.seven-item-s,
+.seven-item-t{
+    transform: scale3d(1,0,0);
+}
+.seven-item-f{
+    transition-delay: 2.5s; // .5
+    position: relative;
+    z-index: 1;
+}
+.seven-item-s{
+    transition-delay: 3.5s; //1.5
+    position: relative;
+    z-index: 0;
+}
+.seven-item-t{
+    transition-delay: 4.3s; // 2.5
+    position: relative;
+    z-index: 1;
+}
+.trans-off{
+    transform: scale3d(1,1,1);
+}
+

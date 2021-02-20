@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>5s</title>
+</head>
+
+<body class="body th-back-color" id="body">
+<div class="preloader th-back-color">
+    <div class="preloader__load">
+        <div class="load__line th-bgc-rgba"></div>
+    </div>
+</div>
+<div class="c-pulse">
+    <div class="c-pulse-def pulse-f"></div>
+    <div class="c-pulse-def pulse-s"></div>
+</div>
+<div class="works-modal transform-top-center th-bgc-rgba">
+    <div class="works-modal-wrap">
+        <div class="works-modal-video">
+
+        </div>
+        <div class="works-modal-btn">
+            <div class="md-close-btn">
+                <a href="#" class="works-link md-link global-flex stroke-svg sw-ignore">
+                    <div class="md-svg-close">
+                        <svg class="o-button__circle def-svg sw-ignore work-close-svg" viewBox="0 0 274.1799927 303.2999878"><path class="st0 sw-ignore" d="M272.18 240.37c-27.25 36.96-71.09 60.93-120.53 60.93-82.65 0-149.65-67-149.65-149.65s67-149.65 149.65-149.65c49.44 0 93.28 23.97 120.53 60.93"/></svg>
+                    </div>
+                    <div class="md-title global-flex global-as-center sw-ignore">
+                        <div class="md-close-lines global-flex">
+                            <div class="md-line"></div>
+                            <div class="md-line"></div>
+                        </div>
+                        <div class="md-header global-as-center work-close-header">
+                            <h2 class="sw-ignore">close</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper page-main">
+    <div class="content">
+        <div class="main-container">
+            @@include('_header.html')
+            @@include('_main.seven-title.html')
+            @@include('_main.video.html')
+            @@include('_main.modal.html')
+        </div>
+        <div class="information">
+            @@include('_main.info.html')
+        </div>
+        <div class="projects th-back-color">
+            <div class="prj-container">
+                @@include('_projects.header.html')
+                @@include('_projects.works.html')
+            </div>
+        </div>
+        <footer class="footer th-back-color">
+            <div class="footer__clients">
+                @@include('_footer.table.html')
+            </div>
+            <div class="footer__bg-string">
+                @@include('_footer.bg__running-str.html')
+            </div>
+            <div class="footer__menu">
+                @@include('_footer.menu.html')
+            </div>
+            <div class="footer-copyright">
+                <div class="footer-copyright__container">
+                    <p class="th-color font-default">© 2020</p>
+                    <p class="th-color font-default">website by p-l cossette</p>
+                </div>
+            </div>
+        </footer>
+        <script src='js/script.js'></script>
+    </div>
+</div>
+
+</body>
+</html>

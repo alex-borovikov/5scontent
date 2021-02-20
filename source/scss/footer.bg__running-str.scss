@@ -1,0 +1,30 @@
+.footer__bg-string{
+    padding: 0 0 4rem 0;
+}
+.string{
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding: 2.5rem 0;
+    display: flex;
+    overflow: hidden;
+    transform: translateY(50%);
+}
+.string__items{
+    white-space: nowrap;
+    animation-name: moveString;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.string__items span{
+    font-size: 5.7vw;
+    margin-right: 7.5rem;
+    text-transform: uppercase;
+}
+@keyframes moveString {
+    to{
+        transform: translate(-100%);
+    }
+}

@@ -1,0 +1,22 @@
+.footer__menu{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__menu-container{
+    transform: translateY(220%);
+    width: 75%;
+}
+.f-menu-list{
+    display: flex;
+}
+.f-menu-item{
+    flex: 0 1 33.333%;
+}
+.footer-copyright{
+    display: none;
+    transform: translateY(450%);
+}
+.footer-copyright__container{
+    width: 75%;
+    margin-left: auto;
+}

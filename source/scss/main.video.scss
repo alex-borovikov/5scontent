@@ -1,0 +1,84 @@
+.main-interactive{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    z-index: 2;
+}
+.int-wrapper{
+    position: relative;
+}
+.main-video{
+    width: calc(350 * 100vw / 1366);
+    transition: transform .9s;
+}
+
+.main-video video{
+    width: 100%;
+    height: 100%;
+}
+
+.main-button{
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    z-index: 3;
+}
+.m-btn-container{
+    position: relative;
+}
+a.m-btn-link {}
+.m-link-container {}
+.m-link-thesis {
+    display: flex;
+    transform: translateY(100%);
+    position: relative;
+    z-index: 1;
+}
+
+.thesis-item:first-child{
+    margin-right: 5px;
+}
+.thesis-item {
+    color: #fff;
+    font-size: 1.1875rem;
+    text-transform: uppercase;
+    transform: translateX(-100%) translateY(-50%);
+    transition: transform .1s;
+}
+.thesis-item:nth-child(2) {
+    transition-delay: .1s;
+}
+.m-btn-link:hover .thesis-item{
+    transform: translateX(-100%) translateY(-180%);
+}
+.m-link-svg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%,40%);
+}
+.m-link-svg svg{
+    width: 13.75rem;
+    height: 13.75rem;
+}
+.m-link-svg svg path{
+    fill: none;
+    stroke-width:6;
+    stroke: #fff;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-dasharray: 3572px;
+    stroke-dashoffset: 3572px;
+    transition: stroke-dashoffset 1s, fill .5s;
+}
+.m-btn-link:hover  .m-link-svg svg path{
+    fill: #00a19a;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+.font-default{
+  font-size: 1.185rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+div._d-none{
+  display: none;
+}
+._lock{
+  overflow: hidden;
+}
+.global-half{
+  flex: 0 1 50%;
+}
+.page-main,
+.th-back-color{
+  background-color: #00a19a;
+}
+.th-bgc-rgba{
+  background-color: rgba(255,255,255, .9);
+}
+.est0{
+  fill: #fff;
+}
+.th-color{
+  color: #fff ;
+}
+.th-color span{
+  color: #fff ;
+}
+.def-svg{
+  stroke-width:6;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+  stroke-dasharray: 791px;
+  stroke-dashoffset: 0;
+  fill:none;
+  transform: rotateX(180deg);
+  transition: stroke-dashoffset 1.2s cubic-bezier(.075,.82,.165,1);
+}
+.svg-display{
+  stroke: #fff;
+  stroke-dasharray: 0;
+}
+$mainColor: #00a19a;
+.circle-def{
+  text-align: center;
+}
+.global-flex{
+  display: flex;
+}
+.global-as-center{
+  align-self: center;
+}
+.on-hidden{
+  overflow: hidden;
+}
+.op-none{
+  opacity: 0;
+  visibility: hidden;
+}
+.gl-border-b{
+  border-bottom: 1px solid #fff;
+}
+div.gl-border-color{
+  border-color: #fff;
+}
+
+.def-block{
+  display: block;
+}
+.transform-top-center{
+  transform: perspective(1000px) rotateX(-90deg) ;
+  transform-origin: top center;
+}
+._mobile-main_modal{
+  transform: perspective(0) rotateX(0) translateY(-100%);
+  transform-origin: 50% 50% 0;
+}
+.def-trsf-translate{
+  transition: transform  1.6s cubic-bezier(.075,.82,.165,1);
+}
+.m-video-trans-off{
+  transform: perspective(1000px) rotateX(0deg);
+}
+
+@mixin carla {
+  font-family: 'Karla', sans-serif;
+}
+@mixin perp{
+  font-family: 'PERTILI';
+}
+
+
+.video-change-page{ // Переход между страницами для info block
+  transform: perspective(1000px) rotateX(90deg) !important;
+  transform-origin: bottom center;
+}
+.headers-change-page{
+  transition-delay: 0s !important;
+  transform: scale3d(1,0,0) !important;
+}
+
+
+
